@@ -1,0 +1,193 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "alumno_evaluado",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "solicitar_revision",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_idAlumno",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_nota",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_asignatura",
+						"type": "string"
+					}
+				],
+				"name": "Evaluar",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_idAlumno",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_asignatura",
+						"type": "string"
+					}
+				],
+				"name": "Revision",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_idAlumno",
+						"type": "string"
+					}
+				],
+				"name": "VerNotas",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "asignatura",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "nota",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct notas.calificacion[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "VerSolicitudesDeRevision",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "asignatura",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "_idAlumno",
+								"type": "string"
+							}
+						],
+						"internalType": "struct notas.solicitud[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "profesor",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"NOTAS/notas.sol": "notas"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"NOTAS/notas.sol": {
+			"keccak256": "0x98c97517a9d4f4d7517607d7770972845ddaa2a840cd28779b65014b405bce0d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7926fbfe3a30eeec261d7f63d7919a85776ac38cd72167dcdb6b60092382f634",
+				"dweb:/ipfs/Qmc2mDnTNeTQVgWVJuJCtVHG6KisrZ9gyjo8WZSKNf6wu5"
+			]
+		}
+	},
+	"version": 1
+}
